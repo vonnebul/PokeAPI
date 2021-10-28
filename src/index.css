@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* couleur type pokemon */
+.ground{
+  background-color: #DC7944;
+}
+.psychic{
+  background-color: #F5727A;
+}
+.fighting{
+  background-color: #CF3F6B;
+}
+.ice{
+  background-color: #74CFC1;
+}
+.dragon{
+  background-color: #2C6DC4;
+}
+.dark{
+  background-color: #554F61;
+}
+.steel{
+  background-color: #5A8EA3;
+}
+.flying{
+  background-color: #93AEE3;
+}
+.rock {
+  background-color: #C5B78D;
+}
+.ghost {
+  background-color: #5068AC;
+}
+.electric {
+  background-color: #F3D239;
+}
+.bug {
+  background-color: #92C22A;
+}
+.poison {
+  background-color: #AB6BC9;
+}
+.normal {
+  background-color: #929BA3;
+}
+.fairy {
+  background-color: #EC90E6;
+}
+.fire {
+  background-color: #CB8650;
+}
+.grass {
+  background-color:#63BC5A;
+}
+.water {
+  background-color:#4F90D6;
+}
+
+/* partie pokemonMiniature.js*/
+.mini-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 ;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  border-radius: 5%;
+}
+.mini-container .nombre {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255,255,255,0.3);
+}
+.mini-container img {
+  width: 120px;
+  height: 120px;
+}
+.mini-container small {
+  text-transform: capitalize;
+}
+/* app.js */
+
+.app-contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container h1 {
+ text-align: center;
+}
+
+.app-container .boutonAPP{
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.app-container .boutonAPP:hover{
+  box-shadow: 1px 3px 10px black;
+}
+
+.vide {
+  background-color: Transparent;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  width: 100%;
+  height: 100%;
+}
+
+/* popup */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner{
+  outline: black solid 3px;
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.popup-inner .close-btn{
+
+  font-size: 30px;
+  color: black;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.popup-inner .images{
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content:space-between;
+}
+.popup-inner .images .tableauStat{
+  padding-right: 50px;
+}
+.statDroite{
+  padding-left: 20px;
+}
+.up-inner .images h4{
+  padding-left: 50px;
+}
+
+.popup-inner .test{
+  display: flex;
+  height: 40px;
+  justify-content:space-between;
+}
